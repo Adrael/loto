@@ -62,7 +62,10 @@
                 });
                 
                 $('#statistiques').click(function(){
+                    var start = new Date().getTime();
                     statistiques();
+                    var end = new Date().getTime() - start;
+                    console.log('Execution time: ' + end);
                 });
             });
         </script>
